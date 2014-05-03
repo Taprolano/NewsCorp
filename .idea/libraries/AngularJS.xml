@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="AngularJS" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery" />
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/NewsCorp/js/angular.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
