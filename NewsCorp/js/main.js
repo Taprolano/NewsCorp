@@ -22,7 +22,9 @@ newsCorpApp
         return {
             restrict: 'E',
             scope: {
-                dataType: '=type'
+                moduleTitle : '@title',
+                dataType: '=type',
+                count : '@count'
             },
             templateUrl: 'template/template.html'
         }

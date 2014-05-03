@@ -10,8 +10,8 @@
             <section class="module" data-ng-controller="module1">
                 <h2>Dynamic txt</h2>
                 <div class="news_pane">
-                    <module data-type="news"></module>
-                    <module data-type="blogs"></module>
+                    <module data-type="news" data-count="10" data-title="News"></module>
+                    <module data-type="blogs" data-count="10" data-title="Blogs"></module>
                 </div>
                 <footer>
                     <a href="http://www.google.com.au" class="float-right">More</a>
@@ -19,10 +19,10 @@
             </section>
         </div>
         <aside class="generic_sidebar">
-            <section class="module">
+            <section class="module" data-ng-controller="module1">
                 <h2 class="small">Dynamic txt</h2>
                 <div class="news_pane">
-                    <module data-type="news"></module>
+                    <module data-type="news" data-count="5" data-title="News"></module>
                 </div>
             </section>
         </aside>

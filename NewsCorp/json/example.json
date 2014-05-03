@@ -1,32 +1,29 @@
 {
-    "news" : {
-        "name" : "News",
-        "data" : [
-            {"title": "Price of stealing a married man? $10m", "url": "price-of-stealing-married-man-10m"},
-            {"title": "Girl forced to sleep with 100 men", "url": "girl-forced-to-sleep-with-100-men"},
-            {"title": "Teenager fired from job via Facebook", "url": "teenager-fired-from-job-via-facebook"},
-            {"title": "I wasn't the only victim - Hey Dad! star", "url": "wasn-the-only-victim-hey-dad-star"},
-            {"title": "'Suicide voyeur' nurse linked to web deaths", "url": "suicide-voyeur-nurse-linked-to-web-deaths"},
-            {"title": "Google shuts down censored Chinese site", "url": "google-shuts-down-censored-chinese-site"},
-            {"title": "Things to know about plane crashes", "url": "things-to-know-about-plane-crashes"},
-            {"title": "Traffic fears follow worst storm in 50 years", "url": "traffic-fears-follow-worst-storm-in-50-years"},
-            {"title": "Australia to Europe in three hours", "url": "australia-to-europe-in-three-hours"},
-            {"title": "Dubai bans cooking with alcohol", "url": "dubai-bans-cooking-with-alcohol"}
-        ]
-    },
-    "blogs" : {
-        "name" : "Blogs",
-        "data" : [
-            {"title": "I would never employ someone who...", "url": "would-never-employ-someone-who"},
-            {"title": "Australia: an international joke", "url": "australia-an-international-joke"},
-            {"title": "Tech savvy toddlers putting parents to shame", "url": "tech-savvy-toddlers-putting-parents-to-shame"},
-            {"title": "He's my soul mate, so why do i still want...", "url": "he-my-soul-mate-so-why-do-still-want"},
-            {"title": "My boss farts and then blames me", "url": "my-boss-farts-and-then-blames-me"},
-            {"title": "He's really rotten in the sack; should I ...", "url": "he-really-rotten-in-the-sack-should"},
-            {"title": "I had sex with my friend's 16-year-old da...", "url": "had-sex-with-my-friend-16-years-old-da"},
-            {"title": "Has my girlfriend slept with too many men?", "url": "has-my-girlfriend-slept-with-too-many-men"},
-            {"title": "Ka-boom! There goes your job hunt", "url": "ka-book-there-goes-your-job-hunt"},
-            {"title": "Goodbye Alex Chilton", "url": "goodbye-alex-chilton"}
-        ]
-    }
+    "news" :
+    [
+        {"title": "Price of stealing a married man? $10m", "url": "price-of-stealing-married-man-10m"},
+        {"title": "Girl forced to sleep with 100 men", "url": "girl-forced-to-sleep-with-100-men"},
+        {"title": "Teenager fired from job via Facebook", "url": "teenager-fired-from-job-via-facebook"},
+        {"title": "I wasn't the only victim - Hey Dad! star", "url": "wasn-the-only-victim-hey-dad-star"},
+        {"title": "'Suicide voyeur' nurse linked to web deaths", "url": "suicide-voyeur-nurse-linked-to-web-deaths"},
+        {"title": "Google shuts down censored Chinese site", "url": "google-shuts-down-censored-chinese-site"},
+        {"title": "Things to know about plane crashes", "url": "things-to-know-about-plane-crashes"},
+        {"title": "Traffic fears follow worst storm in 50 years", "url": "traffic-fears-follow-worst-storm-in-50-years"},
+        {"title": "Australia to Europe in three hours", "url": "australia-to-europe-in-three-hours"},
+        {"title": "Dubai bans cooking with alcohol", "url": "dubai-bans-cooking-with-alcohol"}
+    ],
+    "blogs" :
+    [
+        {"title": "I would never employ someone who...", "url": "would-never-employ-someone-who"},
+        {"title": "Australia: an international joke", "url": "australia-an-international-joke"},
+        {"title": "Tech savvy toddlers putting parents to shame", "url": "tech-savvy-toddlers-putting-parents-to-shame"},
+        {"title": "He's my soul mate, so why do i still want...", "url": "he-my-soul-mate-so-why-do-still-want"},
+        {"title": "My boss farts and then blames me", "url": "my-boss-farts-and-then-blames-me"},
+        {"title": "He's really rotten in the sack; should I ...", "url": "he-really-rotten-in-the-sack-should"},
+        {"title": "I had sex with my friend's 16-year-old da...", "url": "had-sex-with-my-friend-16-years-old-da"},
+        {"title": "Has my girlfriend slept with too many men?", "url": "has-my-girlfriend-slept-with-too-many-men"},
+        {"title": "Ka-boom! There goes your job hunt", "url": "ka-book-there-goes-your-job-hunt"},
+        {"title": "Goodbye Alex Chilton", "url": "goodbye-alex-chilton"}
+
+    ]
 }
