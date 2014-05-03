@@ -7,5 +7,7 @@
 .module_1 {
   width: 650px;
   display: block; }
-  .module_1 .news-pane {
-    border-color: wi; }
+  .module_1 h2 {
+    color: #ffffff; }
+  .module_1 .news_pane {
+    border: 1px solid #b4b4b3; }
