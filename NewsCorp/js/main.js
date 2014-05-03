@@ -2,20 +2,29 @@
  * Created by mgiam_000 on 5/3/14.
  */
 var $pathToData = 'json/example.json'; //EXAMPLE JSON FILE. TO BE CHANGED WITH ACTUAL JSON FEED
-var newsCorpAppModule1 = angular.module('newsCorpApp', []);
+var newsCorpApp = angular.module('newsCorpApp', []);
 
-newsCorpAppModule1.controller('module1', ['$scope', '$http', function(scope, http){
-    scope.data = {
-        news : {},
-        blogs : {}
-    };
-    scope.getData = function(){
-        http
-            .get($pathToData)
-            .success(function(data){
-                scope.data.news = data.news;
-                scope.data.blogs = data.blogs;
-            })
+newsCorpApp
+    .controller('module1', ['$scope', '$http', function(scope, http){
+        scope.news = {};
+        scope.blogs = {};
+        scope.getData = function(){
+            http
+                .get($pathToData)
+                .success(function(data){
+                    scope.news = data.news;
+                    scope.blogs = data.blogs;
+                })
+        }
+        scope.getData();
+    }])
+    .directive('module', function() {
+        return {
+            restrict: 'E',
+            scope: {
+                dataType: '=type'
+            },
+            templateUrl: 'template/template.html'
+        }
     }
-    scope.getData();
-}]);
+);

@@ -1,0 +1,6 @@
+<h3>Most Popular {{dataType.name}}</h3>
+<ol>
+    <li data-ng-repeat="article in dataType.data | limitTo: 10">
+        <a href="/{{article.url}}">{{article.title}}</a>
+    </li>
+</ol>

@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>NewsCorp - News Module</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <div class="generic_container">
-        <section class="module" data-ng-app="newsCorpApp" data-ng-controller="module1">
-            <h2>Dynamic txt</h2>
-            <div class="news_pane">
-                <div>
-                    <h3>Most Popular News</h3>
-                    <ol>
-                        <li data-ng-repeat="article in data.news">
-                            <a href="/{{article.url}}">{{article.title}}</a>
-                        </li>
-                    </ol>
+    <head>
+        <meta charset="utf-8" />
+        <title>NewsCorp - News Module</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body data-ng-app="newsCorpApp">
+        <div class="generic_container">
+            <section class="module" data-ng-controller="module1">
+                <h2>Dynamic txt</h2>
+                <div class="news_pane">
+                    <module data-type="news"></module>
+                    <module data-type="blogs"></module>
                 </div>
-                <div>
-                    <h3>Most Popular Blogs</h3>
-                    <ol>
-                        <li data-ng-repeat="article in data.blogs">
-                            <a href="/{{article.url}}">{{article.title}}</a>
-                        </li>
-                    </ol>
-                </div>
-
-            </div>
-            <footer>
-                <a href="http://www.google.com.au" class="float-right">More</a>
-            </footer>
-        </section>
-    </div>
-    <aside class="generic_sidebar">
-        <section class="module">
-            <div class="title"></div>
-            <div class="news_pane"></div>
-        </section>
-    </aside>
-    <script src="js/angular.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+                <footer>
+                    <a href="http://www.google.com.au" class="float-right">More</a>
+                </footer>
+            </section>
+        </div>
+        <aside class="generic_sidebar">
+            <section class="module">
+                <div class="title"></div>
+                <div class="news_pane"></div>
+            </section>
+        </aside>
+        <script src="js/angular.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
