@@ -1,3 +1,16 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+body, div, p, span, h2, h3, ul, li {
+  font-family: arial, helvetica, san-serif; }
+
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .float-left {
   float: left; }
 
@@ -8,6 +21,49 @@
   width: 650px;
   display: block; }
   .module_1 h2 {
-    color: #ffffff; }
+    color: #ffffff;
+    background-color: #133c6c;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#386798), to(#133c6c));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #386798, #133c6c);
+    background-image: -moz-linear-gradient(top, #386798, #133c6c);
+    background-image: -ms-linear-gradient(top, #386798, #133c6c);
+    background-image: -o-linear-gradient(top, #386798, #133c6c);
+    background-image: linear-gradient(top, #386798, #133c6c);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#386798', EndColorStr='#133c6c');
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
   .module_1 .news_pane {
-    border: 1px solid #b4b4b3; }
+    border: 1px solid #b4b4b3;
+    padding: 10px;
+    margin-botto: 5px; }
+    .module_1 .news_pane h3 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 0; }
+    .module_1 .news_pane div {
+      display: inline-block;
+      width: 49.5%; }
+  .module_1 a {
+    color: #000;
+    text-decoration: none; }
+    .module_1 a:hover {
+      color: #000;
+      text-decoration: underline; }
+    .module_1 a:after {
+      content: ' \00BB';
+      color: #f00; }

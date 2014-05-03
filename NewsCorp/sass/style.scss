@@ -1,5 +1,52 @@
 $grey: #b4b4b3;
 
+@mixin border-sizing{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor);
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor);
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor);
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor);
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+@mixin border-radius($tl, $tr, $br, $bl) {
+  -webkit-border-top-left-radius: $tl;
+  -webkit-border-top-right-radius: $tr;
+  -webkit-border-bottom-right-radius: $br;
+  -webkit-border-bottom-left-radius: $bl;
+  -moz-border-radius-topleft: $tl;
+  -moz-border-radius-topright: $tr;
+  -moz-border-radius-bottomright: $br;
+  -moz-border-radius-bottomleft: $bl;
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr;
+  border-bottom-right-radius: $br;
+  border-bottom-left-radius: $bl;
+}
+
+
+html, body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body, div, p, span, h2, h3, ul, li{
+  font-family: arial, helvetica, san-serif;
+}
+
+div{
+  @include border-sizing;
+}
+
 .float-left {
   float: left;
 }
@@ -15,10 +62,43 @@ $grey: #b4b4b3;
 
   h2{
     color: #ffffff;
+    @include linear-gradient(#386798, #133c6c);
+    font-size: 14px;
+    font-weight: normal;
+    padding:5px;
+    @include border-radius(5px,5px,0,0);
   }
 
   .news_pane{
     border: 1px solid $grey;
+    padding: 10px;
+    margin-botto:5px;
+
+    h3{
+      font-size: 14px;
+      font-weight: bold;
+      margin-top:0;
+    }
+
+    div{
+      display: inline-block;
+      width:49.5%;
+    }
+  }
+
+  a{
+    color:#000;
+    text-decoration:none;
+    &:hover{
+      color:#000;
+      text-decoration: underline;
+    }
+
+    &:after{
+      content: ' \00BB';
+      color: #f00;
+    }
+
   }
 }
 
