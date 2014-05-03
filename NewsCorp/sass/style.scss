@@ -7,7 +7,7 @@ $bg_color: #ffffff;
 @mixin border-sizing{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing:  border-box;
 }
 
 @mixin linear-gradient($fromColor, $toColor) {
@@ -61,10 +61,9 @@ div,ol{
 }
 
 
-.module_1{
-  width: 650px;
+.module{
+  width: 100%;
   display: block;
-  margin: 20px;
 
   h2{
     color: #ffffff;
@@ -75,7 +74,21 @@ div,ol{
     @include border-radius(5px,5px,0,0);
     box-shadow: 0px -5px 0 0 $text_color;
     border-top:2px solid $bg_color;
+    position: relative;
     border-bottom:1px solid #ecf1f6;
+
+    &:after {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAKCAYAAACe5Y9JAAAAHElEQVQIW2NMbFv7/+ajNwyMVhkz/zMAASOVRADjkyVP+UtmFQAAAABJRU5ErkJggg==");
+      content: ' ';
+      width: 86%;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 80%;
+      opacity: 1;
+      @include border-radius(0,0,0,3px)
+    }
   }
 
   .news_pane{
@@ -127,5 +140,16 @@ div,ol{
 
     }
   }
+
+  clear: both;
 }
 
+.generic_container{
+  width:650px;
+  margin:20px;
+}
+
+.generic_sidebar{
+  width:310px;
+  margin:20px;
+}
