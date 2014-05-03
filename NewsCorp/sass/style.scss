@@ -77,6 +77,12 @@ div,ol{
     position: relative;
     border-bottom:1px solid #ecf1f6;
 
+    &.small{
+      &:after {
+        width: 70%;
+      }
+    }
+
     &:after {
       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAKCAYAAACe5Y9JAAAAHElEQVQIW2NMbFv7/+ajNwyMVhkz/zMAASOVRADjkyVP+UtmFQAAAABJRU5ErkJggg==");
       content: ' ';
@@ -87,7 +93,7 @@ div,ol{
       right: 0;
       height: 80%;
       opacity: 1;
-      @include border-radius(0,0,0,3px)
+      @include border-radius(0,0,0,3px);
     }
   }
 
@@ -102,7 +108,7 @@ div,ol{
       margin:0 0 10px;
     }
 
-    div{
+    module{
       display: inline-block;
       width:49.5%;
 

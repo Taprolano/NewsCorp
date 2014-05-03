@@ -53,6 +53,8 @@ div, ol {
     border-top: 2px solid white;
     position: relative;
     border-bottom: 1px solid #ecf1f6; }
+    .module h2.small:after {
+      width: 70%; }
     .module h2:after {
       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAKCAYAAACe5Y9JAAAAHElEQVQIW2NMbFv7/+ajNwyMVhkz/zMAASOVRADjkyVP+UtmFQAAAABJRU5ErkJggg==");
       content: ' ';
@@ -83,20 +85,20 @@ div, ol {
       font-size: 14px;
       font-weight: bold;
       margin: 0 0 10px; }
-    .module .news_pane div {
+    .module .news_pane module {
       display: inline-block;
       width: 49.5%; }
-      .module .news_pane div ol {
+      .module .news_pane module ol {
         padding-left: 30px;
         margin: 0;
         text-indent: 0; }
-        .module .news_pane div ol li {
+        .module .news_pane module ol li {
           font-size: 13px;
           color: #b4b4b3; }
-          .module .news_pane div ol li a {
+          .module .news_pane module ol li a {
             text-decoration: none;
             color: #324fb8; }
-            .module .news_pane div ol li a:hover {
+            .module .news_pane module ol li a:hover {
               text-decoration: underline; }
   .module footer a {
     color: #000;
