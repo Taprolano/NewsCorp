@@ -1,0 +1,11 @@
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.module_1 {
+  width: 650px;
+  display: block; }
+  .module_1 .news-pane {
+    border-color: wi; }
