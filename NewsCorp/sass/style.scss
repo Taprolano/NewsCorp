@@ -1,4 +1,8 @@
-$grey: #b4b4b3;
+$text_color: #b4b4b3;
+$link_color: #324fb8;
+$title_gradient_start: #386798;
+$title_gradient_finish: #133c6c;
+$bg_color: #ffffff;
 
 @mixin border-sizing{
   -webkit-box-sizing: border-box;
@@ -37,13 +41,14 @@ html, body{
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: $bg_color;
 }
 
-body, div, p, span, h2, h3, ul, li{
+body, div, p, span, h2, h3, ol, li{
   font-family: arial, helvetica, san-serif;
 }
 
-div{
+div,ol{
   @include border-sizing;
 }
 
@@ -59,46 +64,68 @@ div{
 .module_1{
   width: 650px;
   display: block;
+  margin: 20px;
 
   h2{
     color: #ffffff;
-    @include linear-gradient(#386798, #133c6c);
+    @include linear-gradient($title_gradient_start, $title_gradient_finish);
     font-size: 14px;
     font-weight: normal;
     padding:5px;
     @include border-radius(5px,5px,0,0);
+    box-shadow: 0px -5px 0 0 $text_color;
+    border-top:2px solid $bg_color;
+    border-bottom:1px solid #ecf1f6;
   }
 
   .news_pane{
-    border: 1px solid $grey;
+    border: 1px solid $text_color;
     padding: 10px;
-    margin-botto:5px;
+    margin-bottom:5px;
 
     h3{
       font-size: 14px;
       font-weight: bold;
-      margin-top:0;
+      margin:0 0 10px;
     }
 
     div{
       display: inline-block;
       width:49.5%;
+
+      ol{
+        padding-left: 30px;
+        margin: 0;
+        text-indent: 0;
+        li{
+          font-size: 13px;
+          color:$text_color;
+          a{
+            text-decoration: none;
+            color: $link_color;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
   }
-
-  a{
-    color:#000;
-    text-decoration:none;
-    &:hover{
+  footer{
+    a{
       color:#000;
-      text-decoration: underline;
-    }
+      text-decoration:none;
+      &:hover{
+        color:#000;
+        text-decoration: underline;
+      }
 
-    &:after{
-      content: ' \00BB';
-      color: #f00;
-    }
+      &:after{
+        content: ' \00BB';
+        color: #f00;
+      }
 
+    }
   }
 }
 
