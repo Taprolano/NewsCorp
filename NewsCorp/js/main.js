@@ -6,14 +6,15 @@ var newsCorpAppModule1 = angular.module('newsCorpApp', []);
 
 newsCorpAppModule1.controller('module1', ['$scope', '$http', function(scope, http){
     scope.data = {
-        articles : {}
+        news : {},
+        blogs : {}
     };
     scope.getData = function(){
-        var articles = scope.data.articles;
         http
             .get($pathToData)
             .success(function(data){
-                scope.data.articles = data
+                scope.data.news = data.news;
+                scope.data.blogs = data.blogs;
             })
     }
     scope.getData();

@@ -11,14 +11,19 @@
         <div class="news_pane">
             <div>
                 <h3>Most Popular News</h3>
-                <ul>
-                    <li data-ng-repeat="article in data.articles">
+                <ol>
+                    <li data-ng-repeat="article in data.news">
                         <a href="/{{article.url}}">{{article.title}}</a>
                     </li>
-                </ul>
+                </ol>
             </div>
             <div>
                 <h3>Most Popular Blogs</h3>
+                <ol>
+                    <li data-ng-repeat="article in data.blogs">
+                        <a href="/{{article.url}}">{{article.title}}</a>
+                    </li>
+                </ol>
             </div>
 
         </div>
