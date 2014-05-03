@@ -5,7 +5,7 @@ var $pathToData = 'json/example.json'; //EXAMPLE JSON FILE. TO BE CHANGED WITH A
 var newsCorpApp = angular.module('newsCorpApp', []);
 
 newsCorpApp
-    .controller('module1', ['$scope', '$http', function(scope, http){
+    .controller('module', ['$scope', '$http', function(scope, http){
         scope.news = {};
         scope.blogs = {};
         scope.getData = function(){

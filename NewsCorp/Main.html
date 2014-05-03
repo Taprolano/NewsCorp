@@ -6,8 +6,10 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body data-ng-app="newsCorpApp">
+
+        <!-- THIS IS THE MAIN MODULE WITH THE 2 SECTIONS - This module is placed in a generic container with a fixed size -->
         <div class="generic_container">
-            <section class="module" data-ng-controller="module1">
+            <section class="module" data-ng-controller="module">
                 <h2>Dynamic txt</h2>
                 <div class="news_pane">
                     <module data-type="news" data-count="10" data-title="News"></module>
@@ -18,9 +20,11 @@
                 </footer>
             </section>
         </div>
+
+        <!-- THIS IS THE 2nd MODULE WITH JUST A CALL TO A SINGLE SECTION - This module is placed in a generic aside but can be placed dynamically everywhere-->
         <aside class="generic_sidebar">
-            <section class="module" data-ng-controller="module1">
-                <h2 class="small">Dynamic txt</h2>
+            <section class="module small" data-ng-controller="module">
+                <h2>Dynamic txt</h2>
                 <div class="news_pane">
                     <module data-type="news" data-count="5" data-title="News"></module>
                 </div>

@@ -1,3 +1,8 @@
+/*-------------------------------------------------------------*/
+/* This scss file generate the style for the module and can be */
+/* modified to change each property.                           */
+/*-------------------------------------------------------------*/
+
 $text_color: #b4b4b3;
 $link_color: #324fb8;
 $title_gradient_start: #386798;
@@ -77,12 +82,6 @@ div,ol{
     position: relative;
     border-bottom:1px solid #ecf1f6;
 
-    &.small{
-      &:after {
-        width: 70%;
-      }
-    }
-
     &:after {
       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAKCAYAAACe5Y9JAAAAHElEQVQIW2NMbFv7/+ajNwyMVhkz/zMAASOVRADjkyVP+UtmFQAAAABJRU5ErkJggg==");
       content: ' ';
@@ -146,6 +145,20 @@ div,ol{
 
     }
   }
+
+  &.small{
+    h2{
+      &:after {
+        width: 70%;
+      }
+    }
+    .news_pane{
+      module{
+        width: 100%;
+      }
+    }
+  }
+
 
   clear: both;
 }
