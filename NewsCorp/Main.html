@@ -6,13 +6,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <section class="module_1" data-ng-app="newsCorpAppModule1" data-ng-controller="module1">
+    <section class="module_1" data-ng-app="newsCorpApp" data-ng-controller="module1">
         <h2>Dynamic txt</h2>
         <div class="news_pane">
             <div>
                 <h3>Most Popular News</h3>
                 <ul>
-                    <li ng-repeat="article in articles">
+                    <li data-ng-repeat="article in data.articles">
                         <a href="/{{article.url}}">{{article.title}}</a>
                     </li>
                 </ul>
@@ -22,6 +22,7 @@
             </div>
 
         </div>
+        <script src="js/angular.min.js"></script>
         <script src="js/main.js"></script>
     </section>
     <section class="module_2">

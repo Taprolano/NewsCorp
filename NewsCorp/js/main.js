@@ -9,11 +9,12 @@ newsCorpAppModule1.controller('module1', ['$scope', '$http', function(scope, htt
         articles : {}
     };
     scope.getData = function(){
-        //var articles = scope.data.articles;
+        var articles = scope.data.articles;
         http
             .get($pathToData)
             .success(function(data){
                 scope.data.articles = data
             })
     }
+    scope.getData();
 }]);
